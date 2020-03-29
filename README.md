@@ -23,3 +23,5 @@ podbump major
 ```
 
 The script prints the new version for use in other build scripts
+
+Add the script to your path to be able to call it from any directory
