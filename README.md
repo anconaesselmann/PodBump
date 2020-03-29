@@ -33,3 +33,4 @@ The script prints the new version for use in other build scripts. Example:
 git tag "$(podbump)";git add YOUR_POD_NAME.podspec;git commit -m"version bump";git push;git push --tags
 ```
 
+If travis is set up to deploy the pod, an alias for the above command will allow you to tag and deploy with one command.
