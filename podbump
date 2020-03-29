@@ -32,6 +32,11 @@ def bump_version(match):
 
     version[type.value] = version[type.value] + 1
 
+    if type is Component.MAJOR:
+        version[1] = 0
+    if type is Component.MINOR:
+        version[2] = 0
+
     new_version = str(version[0]) + "." + str(version[1]) + "." + str(version[2])
     print(new_version)
     return match.group(1) + new_version
